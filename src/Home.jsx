@@ -11,6 +11,7 @@ import {
 } from "./sections";
 const Home = () => {
   return (
+    <>
     <main className='relative'>
     <section className='xl:padding-l wide:padding-r padding-b'>
       <Hero />
@@ -35,6 +36,10 @@ const Home = () => {
     </section>
     
   </main>
+  <section className=' bg-black padding-x padding-t pb-8'>
+    <Footer />
+  </section>
+  </>
   )
 }
 
