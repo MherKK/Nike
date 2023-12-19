@@ -22,7 +22,10 @@ const Nav = () => {
   return (
     <header className='padding-x py-8 fixed z-30 w-full bg-black border-b-red-200 border-b-2 '>
       <nav className='flex justify-between items-center max-container'>
-        <Link to='/'>
+        <Link onClick={() => {
+          document.documentElement.scrollTop = '0'
+          document.body.scrollTop = '0'
+        }} to='/'>
           <img
             src={headerLogo}
             alt='logo'
@@ -37,7 +40,7 @@ const Nav = () => {
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
-                href={item.href}
+                href={'/' +item.href}
                 className='font-montserrat hover:underline leading-normal text-lg text-slate-gray max-lg:font-bold max-lg:text-black  max-lg:text-2xl '
               >
                 {item.label}
