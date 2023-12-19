@@ -39,7 +39,10 @@ const Nav = () => {
         `}>
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a
+              <a 
+                onClick={() => {
+                  setHamburger({...hamburgerCoordinates, sideBarMenuRight:-4000})
+                }}
                 href={'/' +item.href}
                 className='font-montserrat hover:underline leading-normal text-lg text-slate-gray max-lg:font-bold max-lg:text-black  max-lg:text-2xl '
               >
