@@ -119,7 +119,7 @@ const SignUp = () => {
             onClick={() => {
                 signUpSubmitHandler()   
             }} 
-            className='text-black font-bold border w-[200px] p-2 rounded-[10px] bg-coral-red text-center'>Submit</Link >    
+            className='text-black font-bold border w-[200px] p-2 rounded-[10px] bg-coral-red text-center hover:bg-black hover:text-coral-red'>Submit</Link >    
 
         </form>
         <p className='p-10 pb-0 text-center md:w-[500px] font-montserrat'><span className='underline underline-offset-4 text-coral-red'>By Signing Up</span>, you will receive email about your orders and the receipt for those orders. So make sure to put a <span className='underline underline-offset-4 text-coral-red'>valid email.</span></p>    

@@ -52,7 +52,6 @@ const Nav = () => {
           ))}
           
         </ul>
-        
         <button onClick={(e) => {
           e.preventDefault();
           hamburgerCoordinates.first.deg === hamburger.first.deg ? 
