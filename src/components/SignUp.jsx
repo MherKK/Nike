@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { dataRef } from '../../firebase'
 
 const SignUp = () => {
-    
+
     const [user,setUser] = useState(
         {
         name:'',
@@ -28,6 +28,7 @@ const SignUp = () => {
                     email:user.email,
                     password:user.password
                 })
+                
                 alert("Sign Up has been successful")
                 document.location.href = '/'
             }

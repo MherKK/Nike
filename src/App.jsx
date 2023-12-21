@@ -3,6 +3,7 @@ import RootLayout from "./RootLayout";
 import Home from "./Home";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
+import ShoppingBag from "./components/ShoppingBag";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -10,6 +11,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />}/>
       <Route path="/signup" element={<SignUp />}/>
       <Route path="/signin" element={<SignIn />} />
+      <Route path="/shopping-bag" element={<ShoppingBag />} />
     </Route>
   )
 )

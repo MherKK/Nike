@@ -1,6 +1,6 @@
-import { initializeApp } from "firebase/app";
 import "firebase/compat/database";
 import firebase from "firebase/compat/app";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -17,5 +17,5 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
+firebase.initializeApp(firebaseConfig);
 export const dataRef = firebase.database()
